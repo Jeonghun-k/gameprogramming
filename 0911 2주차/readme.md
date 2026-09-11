@@ -22,7 +22,6 @@
 | 7 | `scanf("%*c", c);` | `%*c`는 입력은 받지만 저장하지 않는다. 즉, 비어있는 `\n`을 소비해서 버린다. |
 | 8 | `scanf(" %c", &c);` | `%c` 앞에 공백을 추가하면 공백 문자(whitespace)를 구분자로 인식해 건너뛴다. |
 
-> 출처: [plustag.tistory.com](https://plustag.tistory.com/1)
 
 ---
 

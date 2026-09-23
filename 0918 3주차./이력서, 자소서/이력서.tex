@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Jeonghun Kwak} \\ \vspace{1pt}
+    \small [010-1234-1234] $|$ \href{mailto:you@email.com}{\underline{kdfkjh@naver.com}} $|$
+    \href{https://github.com/ID}{\underline{github.com/Jeonghun-k}} $|$
+    \href{https://linkedin.com/in/ID}{\underline{linkedin.com/in/ID}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kyungsung University}{Busan, South Korea}
+      {B.S. in Software Engineering}{Expected Feb. 2028}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} Database Systems, Web Programming (React, HTML, CSS, JS), Deep Learning (TensorFlow), Computer Networks, Object-Oriented Programming (C++), Programming Language Theory, Computer Security, Assembly Language}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, C, JavaScript/TypeScript, Python, SQL, HTML, CSS} \\
+     \textbf{Frameworks}{: React, Next.js, Vite, TensorFlow} \\
+     \textbf{Tools/DB}{: Supabase, Oracle, Git}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{VinoBase} $|$ \emph{Next.js, [DB], [Other]}}{[1. 2026]}
+          \resumeItemListStart
+            \resumeItem{Built a solo wine discovery web app for beginners using a 130K-review dataset}
+            \resumeItem{[Implemented feature X that achieved Y]}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{GameStack} $|$ \emph{React, Vite, Supabase}}{[5. 2026]}
+          \resumeItemListStart
+            \resumeItem{Developed a gamer portfolio platform as a [N]-person team project}
+            \resumeItem{[Your part, e.g., Designed the DB schema and auth using Supabase]}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{[Schedule Manager]} $|$ \emph{C++}}{[1. 2026]}
+          \resumeItemListStart
+            \resumeItem{Implemented a personal scheduling system applying inheritance and polymorphism}
+            \resumeItem{[One line on design/structure]}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{[Olimfit guide]} $|$ \emph{HTML, JS, CSS, VIBE coding}}{[11. 2025]}
+          \resumeItemListStart
+            \resumeItem{Built a web app that recommends exercise routines based on the user's physical condition}
+            \resumeItem{[One line on design/structure]}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{F\^{e}ter} $|$ \emph{HTML, CSS, JavaScript}}{Nov. 2025}
+          \resumeItemListStart
+            \resumeItem{Built a web app for discovering major festivals across South Korea}
+            \resumeItem{Implemented a calendar view to browse all festivals at a glance, with a detail page for each festival}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{[Portfolio project]} $|$ \emph{TypeScript, JS, CSS, VIBE coding}}{[12. 2025]}
+          \resumeItemListStart
+            \resumeItem{this project for introduce my self to others. Main page, show my experience, second my life history, third about me, finally my skills and projects}
+            \resumeItem{[One line on design/structure]}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{[DeadlineMate]} $|$ \emph{TypeScript, JS, CSS, VIBE coding}}{3. 2026]}
+          \resumeItemListStart
+            \resumeItem{Built a web app that helps university students manage deadlines and schedules}
+            \resumeItem{Implemented uploading of course schedules, documents, and grades to organize academic tasks in one place}
+    \resumeItemListEnd
+            \resumeItem{[One line on design/structure]}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------ADDITIONAL-----------
+\section{Additional}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Korean (Native), English ([TOEIC/OPIc score]), French(DELF A1)} \\
+     \textbf{Certifications}{: [If any]}
+    }}
+ \end{itemize}
+
+\end{document}

@@ -141,10 +141,7 @@ VS Code·Antigravity의 Live Server로 열어도 똑같이 실행됩니다.
 ## 📂 폴더 구성
 
 ```
-├── gorocat.html        # 최종 게임 (v46)
-├── versions/           # v0 ~ v46 버전별 게임 파일
-├── prompts/            # 프롬프트 기록표, 프롬프트 원문 모음
-└── results/            # 발표 자료 PDF, 게임 화면·프롬프트 캡처
+└── gorocat.html        # 최종 게임 (v46)
 ```
 
 > 발표 자료의 프롬프트 캡처는 발표용으로 다시 입력한 프롬프트이며, 실제 작업 때 보낸 원문은 `prompts/`의 기록표에 있습니다.
